@@ -167,6 +167,30 @@ export default defineComponent({
   text-align: center;
   font-weight: bold;
 }
+@media only screen and (max-width: 1279px) {
+  .container {
+    background-color: #FFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float: left;
+    position: fixed;
+    top:247px;
+    z-index: 3;
+    box-shadow: 0px 8px 22px 2px #0000001F;
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 3%;
+    height: 402px;
+    padding: 32px 24px 32px 32px;
+    opacity: 0px;
+
+  }
+  .imgh{
+    height: 350px;
+  }
+}
 @media only screen and (min-width: 1280px) and (max-width: 1439px) {
   .container {
     background-color: #FFF;
