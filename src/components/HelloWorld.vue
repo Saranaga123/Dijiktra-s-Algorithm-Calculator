@@ -8,11 +8,10 @@
 
     </div>
     <div class="lightblue">
-
     </div>
     <div class="container">
         <div class="inputs">
-          <h3 class="topic">Select Path</h3>
+          <h3 class="topic">Select Path </h3>
           <div>
             <label for="startNode" class="subtitle">From Node:</label>
             <br>
