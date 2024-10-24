@@ -1,5 +1,4 @@
-# tec-interview
-
+![Project Logo](@/assets/tecint.gif)
 ## Project setup
 ```
 npm install
