@@ -16,15 +16,18 @@
           <div>
             <label for="startNode" class="subtitle">From Node:</label>
             <br>
-            <select v-model="startNode" id="startNode" class="selectbx">
-              <option hidden disabled selected>- Select -</option>
+            <select v-model="startNode" id="startNode" class="selectbx"
+            :class="{ blackFcolor: startNode, grayFcolor: !startNode }" >
+              <option value="" selected hidden>Select</option>
               <option v-for="node in nodes" :key="node" :value="node">{{ node }}</option>
             </select>
           </div>
           <div>
             <label for="endNode" class="subtitle">To Node:</label>
             <br>
-            <select v-model="endNode" id="endNode" class="selectbx">
+            <select v-model="endNode" id="endNode" class="selectbx"
+            :class="{ blackFcolor: endNode, grayFcolor: !endNode }" >
+              <option value="" selected hidden>Select</option>
               <option v-for="node in nodes" :key="node" :value="node">{{ node }}</option>
             </select>
           </div>
@@ -154,6 +157,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.blackFcolor{
+  color:black
+}
+.grayFcolor{
+  color: gray;
+}
 .pathvar{
   width:100%;
   text-align: center;
@@ -316,7 +325,7 @@ line-height: 18px;
 text-align: left;
 
 }
-.selectbx{
+.selectbx {
   width: 80%;
   height: 42px;
   font-size: 14px;
@@ -328,6 +337,13 @@ text-align: left;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.selectbx option {
+  color: #333; /* Normal color for options */
+}
+
+.selectbx option[value=""]:not(:checked) {
+  color: #aaa; /* Faded color for the placeholder */
+}
 .inputs {
   width:50%;
   float: left;
