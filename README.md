@@ -1,4 +1,4 @@
-
+![Project Logo](src/assets/ss.png)
 ![Project Logo](src/assets/tecint.gif)
 ##Project Description
 
