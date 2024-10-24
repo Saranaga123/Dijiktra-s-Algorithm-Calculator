@@ -1,4 +1,4 @@
-![Project Logo](assets/tecint.gif)
+![Project Logo](src/assets/tecint.gif)
 ## Project setup
 ```
 npm install
