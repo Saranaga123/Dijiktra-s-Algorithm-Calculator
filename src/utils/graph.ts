@@ -4,7 +4,7 @@ interface Graph {
 const nodegraph: Graph = {
   A: { B: 4, C: 6 },
   B: { A: 4, F: 2 },
-  C: { D: 8 },
+  C: { D: 8, A: 6 },
   D: { C: 8, E: 4, G: 1 },
   E: { D: 4, F: 3, I: 8 },
   F: {
